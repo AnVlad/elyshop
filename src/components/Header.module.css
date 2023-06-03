@@ -1,0 +1,46 @@
+.header {
+  margin: 20px;
+}
+
+.link {
+  border: none;
+  cursor: pointer;
+
+  font-size: 26px;
+
+  background-color: white;
+}
+
+.shop {
+  font-weight: 500;
+  border-right: 1px solid black;
+
+  padding: 15px;
+  padding-right: 30px;
+}
+
+.cart {
+  border-left: 1px solid black;
+
+  padding: 15px;
+  padding-left: 30px;
+
+  position: relative;
+}
+
+.notification {
+  top: 0px;
+  position: absolute;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+
+  height: 16px;
+  width: 16px;
+
+  text-align: center;
+
+  background-color: red;
+  border-radius: 50%;
+}

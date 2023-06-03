@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  min-width: 800px;
+}
+
+.footer {
+  display: flex;
+
+  margin-top: 30px;
+
+  font-size: 24px;
+  justify-content: end;
+}
+
+.total-price {
+  margin-right: 150px;
+}
+
+.submit-button {
+  margin-right: 5px;
+  width: 140px;
+  height: 40px;
+  font-size: 20px;
+
+  border-radius: 8px;
+  border: 1px solid gray;
+  cursor: pointer;
+}

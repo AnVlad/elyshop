@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+}
+
+.shop-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid black;
+  border-radius: 8px;
+
+  max-width: 200px;
+  min-width: 150px;
+  width: 100%;
+
+  margin-top: 30px;
+  padding: 5px;
+
+  height: 80vh;
+}
+
+.shop-list h1 {
+  text-align: center;
+}
+
+.cards-list {
+  height: 80vh;
+  flex-wrap: wrap;
+  display: flex;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.cards {
+  border: 1px solid black;
+  border-radius: 8px;
+
+  min-width: 650px;
+  width: 100%;
+
+  margin: 30px 5px auto 30px;
+  padding: 5px;
+
+  height: 80vh;
+}

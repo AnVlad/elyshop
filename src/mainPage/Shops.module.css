@@ -1,0 +1,16 @@
+.shop-button {
+  border: 1px solid black;
+  border-radius: 8px;
+
+  background-color: white;
+  font-size: 16px;
+  text-align: center;
+
+  height: 32px;
+  width: 150px;
+
+  margin: 10px 15px;
+  padding: 5px;
+
+  cursor: pointer;
+}
