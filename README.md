@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To watch the code with mongoose choose the "mongoose" branch
+
+Change the branch "master" to "mongoose"
+
 ## Available Scripts
 
 You can run the whole project by writing command:
