@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To watch list of orders
+
+http://localhost:3001/orders to watch list of orders
+
 ## Available Scripts
 
 You can run the whole project by writing command:

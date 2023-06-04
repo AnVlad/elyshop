@@ -21,7 +21,6 @@ function Cart({ cartList, setCartList, setUserInformation, userInformation }) {
     }
 
     const newOrder = {
-      id: Math.round(Math.random() * 100 ** 5),
       cartList: cartList,
       userInformation: userInformation,
     };

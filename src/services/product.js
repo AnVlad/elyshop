@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const baseUrl = 'http://localhost:3001/menuList';
+const ordersUrl = 'http://localhost:3001/orders';
 
 const getList = async () => {
   try {
@@ -15,7 +16,7 @@ const getList = async () => {
 
 const postOrder = async (order) => {
   console.log(order);
-  const response = await axios.post(baseUrl, order);
+  const response = await axios.post(ordersUrl, order);
   return response.data;
 };
 
