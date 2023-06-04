@@ -1,14 +1,10 @@
-require('dotenv').config();
+menuList = require('../menuList');
 
-const mongoUrl = process.env.MONGODB_URI;
-const PORT = 3001;
+const fs = require('fs');
 
-const mongoose = require('mongoose');
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-const menuListRouter = require('./controllers/menuList');
-
 const app = express();
 
 app.use(express.json());
@@ -19,9 +15,23 @@ morgan.token('data', (req, res) => {
   return JSON.stringify(req.body);
 });
 
-mongoose.connect(mongoUrl);
+// let's pretend it's a database
+const saveData = (data) => {
+  const filePath = 'src/server/data.txt';
+  fs.writeFileSync(filePath, JSON.stringify(data));
+};
+//
 
-app.use('/menuList', menuListRouter);
+app.get('/elyshop', (request, response) => {
+  response.json(menuList);
+});
+
+app.post('/elyshop', (request, response) => {
+  saveData(request.body);
+  response.status(202).end();
+});
+
+const PORT = 3001;
 
 app.listen(PORT, () => {
   console.log(`server is running on port ${PORT}`);

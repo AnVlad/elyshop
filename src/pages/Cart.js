@@ -15,7 +15,6 @@ function Cart({ cartList, setCartList, setUserInformation, userInformation }) {
       alert('please, choose the food for ordering');
       return;
     }
-
     if (Object.values(userInformation).join('').length < 20) {
       alert('please, fill the contact information');
       return;

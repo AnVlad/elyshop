@@ -1,16 +1,10 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:3001/menuList';
+const baseUrl = 'http://localhost:3001/elyshop';
 
 const getList = async () => {
-  try {
-    const response = await axios.get(baseUrl);
-    return response.data;
-  } catch (error) {
-    console.log(error);
-    alert(error.message);
-    return [];
-  }
+  const response = await axios.get(baseUrl);
+  return response.data;
 };
 
 const postOrder = async (order) => {
